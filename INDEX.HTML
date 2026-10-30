@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFTERLEAK | Privacy Protection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>🛡 AFTERLEAK</h2>
+    <p>Your Data. Your Control.</p>
+</header>
+
+<nav>
+    <button onclick="showPage('dashboard')">Dashboard</button>
+    <button onclick="showPage('email')">Email Scanner</button>
+    <button onclick="showPage('website')">Website Scanner</button>
+    <button onclick="showPage('policy')">Policy Analyzer</button>
+    <button onclick="showPage('protection')">Protection Centre</button>
+</nav>
+
+<main>
+    <section id="dashboard" class="page active">
+        <h1>Privacy Dashboard</h1>
+        <p>Welcome to your digital privacy control centre.</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Privacy Score</h3>
+                <h1>78/100</h1>
+                <p>Illustrative demo score</p>
+            </div>
+            <div class="card">
+                <h3>Exposure Records</h3>
+                <h1>03</h1>
+                <p>Fictional records</p>
+            </div>
+            <div class="card">
+                <h3>Connected Services</h3>
+                <h1>06</h1>
+                <p>Sample services</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="email" class="page">
+        <h1>Email Exposure Scanner</h1>
+        <p>Enter an email to see simulated exposure results.</p>
+        <input id="emailInput" type="email" placeholder="Enter your email">
+        <button onclick="scanEmail()">Scan Email</button>
+        <div id="emailResult" class="result"></div>
+    </section>
+
+    <section id="website" class="page">
+        <h1>Website Safety Scanner</h1>
+        <p>Check a website using a simulated demonstration.</p>
+        <input id="urlInput" type="text" placeholder="https://example.com">
+        <button onclick="scanWebsite()">Check Website</button>
+        <div id="urlResult" class="result"></div>
+    </section>
+
+    <section id="policy" class="page">
+        <h1>Privacy Policy Analyzer</h1>
+        <p>Explore a sample privacy policy analysis.</p>
+        <button onclick="analyzePolicy()">Analyze Sample Policy</button>
+        <div id="policyResult" class="result"></div>
+    </section>
+
+    <section id="protection" class="page">
+        <h1>Protection Centre</h1>
+        <div class="card">
+            <h3>Recommended Actions</h3>
+            <ul>
+                <li>Enable two-factor authentication.</li>
+                <li>Use a unique password for every account.</li>
+                <li>Avoid suspicious links and attachments.</li>
+                <li>Review app permissions regularly.</li>
+                <li>Remove accounts you no longer use.</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>AFTERLEAK © 2026 | Student Demonstration Prototype</p>
+    <p>All scan results are fictional and simulated.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
